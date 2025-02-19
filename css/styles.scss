@@ -162,9 +162,10 @@ h1 {
 
 .hero {
     h1 {
-        margin: $spacer-lg 0 1rem;
+        margin: $spacer-lg 0 0;
     }
     p {
+        margin-top: 1rem;
         font-size: 1.5rem;
         line-height: 2rem;
         @media (min-width: $desktop) {
