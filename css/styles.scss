@@ -166,7 +166,7 @@ h1 {
     }
     p {
         font-size: 1.5rem;
-        line-height: 1.75rem;
+        line-height: 2rem;
         @media (min-width: $desktop) {
             padding-right: $spacer-xl;
         }
@@ -195,7 +195,7 @@ h1 {
         display: flex;
         gap: $spacer-xs;
         position: relative;
-        margin: 1rem 0 2rem;        
+        margin: 0.5rem 0 2rem;        
         .activity {
             @extend .tag;
             flex: 1;
