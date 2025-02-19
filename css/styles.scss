@@ -1,0 +1,138 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+// Colors
+
+
+// Fonts
+$font-headers: 'Rubik Mono One', monospace;
+$font-body: 'Rubik', sans-serif;
+
+// Spacing
+$spacer-xl: 8rem;
+$spacer-lg: 6rem;
+$spacer-md: 3rem;
+$spacer-sm: 1.5rem;
+$spacer-xs: 0.5rem;
+
+// Borders & background
+$border-radius: 0.5rem;
+
+// Breakpoints
+$mobile: 32em;
+$desktop: 48em;
+
+
+// Transitions
+$transition-time: 0.2s;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: $font-body;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-optical-sizing: auto;
+    padding: $spacer-md $spacer-sm $spacer-sm;
+    @media (min-width: $desktop) {
+        padding: $spacer-md 0;
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all $transition-time ease-in-out;
+    &:hover {
+        background: rgba(255, 255, 255, 0.24);
+    }
+}
+
+h1, h2, h3 {
+    font-family: $font-headers;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 4.25rem;
+}
+
+.container {
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 1.25rem 1.5rem;
+    border-radius: $border-radius;
+    &:hover {
+        background: #fff;
+    }
+}
+
+.logo {
+    display: block;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: $border-radius;
+    padding: 1rem 1.15rem;
+}
+
+
+// HERO
+
+.hero {
+    h1 {
+        margin: $spacer-lg 0 2rem;
+    }
+}
+
+
+// ACTIVITIES
+
+.activities-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(0, 0, 0, 1) 5%, 
+        rgba(0, 0, 0, 1) 95%, 
+        rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(0, 0, 0, 1) 5%, 
+        rgba(0, 0, 0, 1) 95%, 
+        rgba(0, 0, 0, 0) 100%);
+    .activities {
+        display: flex;
+        gap: $spacer-xs;
+        position: relative;
+        margin: 1rem 0 2rem;        
+        .activity {
+            @extend .tag;
+            flex: 1;
+            white-space: nowrap;
+        }
+    }
+}
+
+
+// FOOTER
+footer {
+    font-size: 1rem;
+    padding-top: $spacer-xl;
+}

@@ -1,0 +1,97 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-optical-sizing: auto;
+  padding: 3rem 1.5rem 1.5rem;
+}
+@media (min-width: 48em) {
+  body {
+    padding: 3rem 0;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+h1, h2, h3 {
+  font-family: "Rubik Mono One", monospace;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.25rem;
+}
+
+.container {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.button:hover {
+  background: #fff;
+}
+
+.logo {
+  display: block;
+}
+
+.tag, .activities-wrapper .activities .activity {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 0.5rem;
+  padding: 1rem 1.15rem;
+}
+
+.hero h1 {
+  margin: 6rem 0 2rem;
+}
+
+.activities-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+}
+.activities-wrapper .activities {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  margin: 1rem 0 2rem;
+}
+.activities-wrapper .activities .activity {
+  flex: 1;
+  white-space: nowrap;
+}
+
+footer {
+  font-size: 1rem;
+  padding-top: 8rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
