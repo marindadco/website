@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const activities = document.querySelector(".activities");
     const wrapper = document.querySelector(".activities-wrapper");
 
-    let speed = 0.4;
+    let speed = 0.75;
     let items = [...activities.children];
 
     // Duplicate items to create seamless effect

@@ -1,23 +1,25 @@
 /* Global Styles */
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons&display=swap");
 html, body {
   margin: 0;
   padding: 0;
 }
 
 body {
+  height: 100vh;
   background: #000;
   color: #fff;
   font-family: "Rubik", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
   font-optical-sizing: auto;
-  padding: 3rem 1.5rem 1.5rem;
+  padding: 3rem 1.5rem 0;
 }
 @media (min-width: 48em) {
   body {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
   }
 }
 
@@ -27,7 +29,7 @@ a {
   transition: all 0.2s ease-in-out;
 }
 a:hover {
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(244, 208, 111, 0.24);
 }
 
 h1, h2, h3 {
@@ -39,20 +41,83 @@ h1 {
   line-height: 4.25rem;
 }
 
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
 .container {
   max-width: 36rem;
   margin: 0 auto;
 }
 
+.bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+
 .button {
-  display: inline-block;
-  background: #fff;
+  display: block;
+  background: #F4D06F;
   color: #000;
   padding: 1.25rem 1.5rem;
   border-radius: 0.5rem;
 }
 .button:hover {
-  background: #fff;
+  background: #F4D06F;
+  opacity: 0.9;
+}
+.button.button-arrow {
+  display: flex;
+  justify-content: space-between;
+}
+.button.button-arrow::after {
+  content: "arrow_forward";
+  font-family: "Material Icons";
+  margin-left: auto;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+@media (min-width: 48em) {
+  .button.button-arrow {
+    display: inline-block;
+  }
+  .button.button-arrow::after {
+    margin-left: 1.5rem;
+  }
+}
+@media (min-width: 48em) {
+  .button {
+    display: inline-block;
+  }
 }
 
 .logo {
@@ -67,7 +132,16 @@ h1 {
 }
 
 .hero h1 {
-  margin: 6rem 0 2rem;
+  margin: 6rem 0 1rem;
+}
+.hero p {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+@media (min-width: 48em) {
+  .hero p {
+    padding-right: 8rem;
+  }
 }
 
 .activities-wrapper {
@@ -90,8 +164,8 @@ h1 {
 }
 
 footer {
-  font-size: 1rem;
   padding-top: 8rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
