@@ -181,6 +181,14 @@ h1 {
 }
 
 
+// TALLY FORM
+.tally-popup {
+    @media (min-width: $desktop) {
+        width: 40em !important;
+    }
+}
+
+
 // ACTIVITIES
 
 .activities-wrapper {
