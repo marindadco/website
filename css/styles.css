@@ -1,5 +1,5 @@
 /* Global Styles */
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons&display=swap");
 html, body {
   margin: 0;
@@ -9,13 +9,13 @@ html, body {
 body {
   height: 100vh;
   background: #292F36;
-  color: #fff;
-  font-family: "Rubik", sans-serif;
-  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Stack Sans", sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1.4;
   font-optical-sizing: auto;
-  padding: 3rem 1.5rem 0;
+  padding: 1.5rem 1.5rem 0;
 }
 @media (min-width: 48em) {
   body {
@@ -24,7 +24,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -33,12 +33,17 @@ a:hover {
 }
 
 h1, h2, h3 {
-  font-family: "Rubik Mono One", monospace;
+  font-family: "Stack Sans Notch", monospace;
 }
 
 h1 {
   font-size: 4.5rem;
   line-height: 4.25rem;
+}
+
+.wordmark {
+  font-family: "Stack Sans Notch", monospace;
+  font-weight: 700;
 }
 
 .material-icons {
@@ -57,7 +62,7 @@ h1 {
 }
 
 .container {
-  max-width: 36rem;
+  max-width: 32rem;
   margin: 0 auto;
 }
 
@@ -80,7 +85,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(41, 47, 54, 0.8);
+  background: rgba(41, 47, 54, 0.9);
   z-index: -1;
 }
 
@@ -88,13 +93,17 @@ h1 {
   display: block;
   background: #F4D06F;
   color: #292F36;
-  padding: 1.25rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
+  padding: 1.5rem 1.75rem;
+  border-radius: 100rem;
+  border-bottom: 4px solid rgba(41, 47, 54, 0.5);
+  font-family: "Stack Sans Notch", monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
 }
 .button:hover {
   background: #F4D06F;
-  opacity: 0.9;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 .button.button-arrow {
   display: flex;
@@ -128,8 +137,9 @@ h1 {
 .tag, .activities-wrapper .activities .activity {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 0.5rem;
+  border-radius: 100rem;
   padding: 1rem 1.15rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -145,14 +155,7 @@ h1 {
   margin: 0;
 }
 .hero p {
-  margin-top: 1rem;
   font-size: 1.5rem;
-  line-height: 1.75rem;
-}
-@media (min-width: 48em) {
-  .hero p {
-    padding-right: 8rem;
-  }
 }
 
 @media (min-width: 48em) {
@@ -182,6 +185,7 @@ h1 {
 
 footer {
   padding: 8rem 0 1.5rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
