@@ -41,6 +41,10 @@ h1 {
   line-height: 4.25rem;
 }
 
+.body-lg, .hero p {
+  font-size: 1.4rem;
+}
+
 .wordmark {
   font-family: "Stack Sans Notch", monospace;
   font-weight: 700;
@@ -62,7 +66,7 @@ h1 {
 }
 
 .container {
-  max-width: 32rem;
+  max-width: 48rem;
   margin: 0 auto;
 }
 
@@ -136,7 +140,7 @@ h1 {
 
 .tag, .activities-wrapper .activities .activity {
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 100rem;
   padding: 1rem 1.15rem;
   font-size: 1.1rem;
@@ -154,10 +158,6 @@ h1 {
 .hero h1 {
   margin: 0;
 }
-.hero p {
-  font-size: 1.5rem;
-}
-
 @media (min-width: 48em) {
   .tally-popup {
     width: 40em !important;

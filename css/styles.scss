@@ -67,6 +67,10 @@ h1 {
     line-height: 4.25rem;
 }
 
+.body-lg {
+    font-size: 1.4rem;
+}
+
 .wordmark {
     font-family: $font-headers;
     font-weight: 700;
@@ -88,7 +92,7 @@ h1 {
 }
 
 .container {
-    max-width: 32rem;
+    max-width: 48rem;
     margin: 0 auto;
 }
 
@@ -162,7 +166,7 @@ h1 {
 
 .tag {
     display: inline-block;
-    border: 1px solid rgba($light, 0.24);
+    background: rgba($light, 0.1);
     border-radius: $border-radius;
     padding: 1rem 1.15rem;
     font-size: 1.1rem;
@@ -181,7 +185,7 @@ h1 {
         margin: 0;
     }
     p {
-        font-size: 1.5rem;
+        @extend .body-lg;
     }
 }
 
