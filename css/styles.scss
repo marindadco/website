@@ -67,6 +67,19 @@ h1 {
     line-height: 4.25rem;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    .instagram-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/instagram.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 .body-lg {
     font-size: 1.4rem;
 }
